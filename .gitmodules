@@ -1,9 +1,9 @@
 [submodule "ftables_ffi"]
 	path = ftables_ffi
-	url = ./ftables_ffi
+	url = http://github.com/finleyowen/ftables_ffi
 [submodule "ftables_ui"]
 	path = ftables_ui
-	url = ./ftables_ui
+	url = http://github.com/finleyowen/ftables_ui
 [submodule "ftables_lib"]
 	path = ftables_lib
-	url = ./ftables_lib
+	url = http://github.com/finleyowen/ftables_lib
