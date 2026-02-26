@@ -1,5 +1,7 @@
 # FTables
 
+FTables can be thought of as a cross between a spreadsheet application and a relational database management system (RDBMS). It's designed for those cases where the problem scope doesn't justify the development of a full-stack solution, but the Excel workbook/Google form currently in place is no longer cutting it. It allows data owners a high level of control over the format, structure, and security of their data without requiring a purpose-built full-stack application to manage it.
+
 ## Motivation
 
 Traditional spreadsheet applications like (e.g., Microsoft Excel, Google Sheets, Apple Numbers) are as limited in the structure they enforce as they are in the flexibility they permit. While these applications certainly have many appropriate use cases, it's arguable that in many of these use cases, an even more suitable solution would be one that more closely resembles a Relational Database Management System (RDBMS). Here are some reasons why traditional spreadsheet applications might not be suitable for many use cases that they are commonly applied to in practice:
