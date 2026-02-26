@@ -13,6 +13,36 @@ Traditional spreadsheet applications like (e.g., Microsoft Excel, Google Sheets,
 
 ## Try FTables
 
-Currently, the only way to try FTables is by cloning the repository and running it with Flutter. This requires:
-- [Dart](https://dart.dev/) and [Flutter](flutter.dev)
-- [Rust and Cargo](https://rust-lang.org/)
+Currently, the only way to try FTables is by building it from source.
+
+### Requirements
+
+You'll need to install the following software to build FTables from source:
+
+- [Git](https://git-scm.com/)
+- [Cargo/RustC](https://rust-lang.org/)
+- [Flutter](https://flutter.dev/) (either through [Dart](http://dart.dev) or [VSCode](https://code.visualstudio.com/))
+
+### Steps
+
+The following steps will build and run the application. 
+
+1. Clone the UI repo:
+	```
+	git clone http://github.com/finleyowen/ftables_ui
+	```
+
+2. Clone the FFI repo inside the UI repo:
+	```
+	cd ftables_ui && git clone http://github.com/finleyowen/ftables_ffi
+	```
+
+3. Build the FFI repo into a shared library:
+	```
+	cd ftables_ffi && cargo build --release
+	```
+
+4. Build the UI into an executable and run it (**note:** If you installed the Flutter VS Code extension rather than manually installing Flutter, you'll need to perform this step from a terminal **inside VS Code**):
+	```
+	cd ../ && flutter run --release
+	```
